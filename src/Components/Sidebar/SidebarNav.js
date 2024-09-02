@@ -9,8 +9,8 @@ import {
 import { IoIosLogOut } from "react-icons/io";
 import { TbCategory } from "react-icons/tb";
 import { TbCategory2 } from "react-icons/tb";
-import { AiOutlineProduct } from "react-icons/ai";
 import { FaBoxOpen } from "react-icons/fa";
+import { MdHighlight } from "react-icons/md";
 import logo from "../../Assets/Logo.png";
 import "./SidebarNav.css";
 
@@ -111,6 +111,14 @@ const SidebarNav = () => {
               title="Products"
               to="/products"
               icon={<FaBoxOpen />}
+              selected={selected}
+              setSelected={setSelected}
+              className="sidenav-icon"
+            />
+            <Item
+              title="Highlights"
+              to="/highlights"
+              icon={<MdHighlight />}
               selected={selected}
               setSelected={setSelected}
               className="sidenav-icon"
